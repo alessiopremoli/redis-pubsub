@@ -16,7 +16,7 @@ export class AppController {
     console.log(`data: ${data} - context: ${JSON.stringify(context)}`);
   }
 
-  @MessagePattern('channel-two-message')
+  @MessagePattern('message-two')
   handleMessage(@Payload() data: any, @Ctx() context: RedisContext) {
     console.log(`data: ${data} - context: ${JSON.stringify(context)}`);
   }
